@@ -7,8 +7,7 @@ verbs = ["Do", "The", "That", "Does", "Is", "Am", "Are", "Has", "Have", "Been", 
          "Had", "Shall", "Will", "Can", "Could", "May", "Might", "Must", "Should", "Would", "Be", "Of", "A", "An"]
 
 
-# file = open("C:/Users/HP/Desktop/first_answer.txt.txt", errors="ignore")
-# text = "".join(file.read().split("\n"))
+
 
 
 class copy_checker_ai_checker():
