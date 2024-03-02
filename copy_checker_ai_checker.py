@@ -15,9 +15,10 @@ class copy_checker_ai_checker():
         self.text1 = text1
 
     def send_check(self):
-        path = r"C:\Users\HP\Documents\Programming\Python\plagiarism project\data"
+        path = "data"
         list_dr = os.listdir(path)
         list_dr.remove("system_id_gmail.csv")
+        print(list_dr)
         for data in list_dr:
             with open(f"data/{data}") as file:
                 text = "".join(file.read().strip("\n"))

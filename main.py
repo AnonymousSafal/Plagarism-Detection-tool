@@ -21,8 +21,9 @@ def check_insert():
             if life > 0:
                 if copy_checker_ai_checker(text).send_check():
                     with open(
-                            f"C:/Users/HP/Documents/Programming/Python/plagiarism project/data/{Enter_system_id_text.get()}.txt",
+                            f"data/{Enter_system_id_text.get()}.txt",
                             mode="w", errors="ignore") as file_to_be_stored:
+                        print(text);
                         file_to_be_stored.write(text)
                 else:
                     messagebox.showwarning(title="Plagiarism detected",
