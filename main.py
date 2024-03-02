@@ -11,9 +11,10 @@ def callback():
 
 
 def check_insert():
-    mail_life = mail_life_checker(Enter_system_id_text.get())
+    system_id = int(Enter_system_id_text.get())
+    mail_life = mail_life_checker(system_id)
     life = mail_life.life
-    gmail = mail_life.gmail
+    
     if len(Enter_system_id_text.get()) > 3 and len(Enter_gmail_text.get()) > 3 and len(file_path_text.cget("text")) > 4:
         with open(file_path_text.cget("text"), encoding="utf-8", errors="ignore") as file:
             text = "".join(file.read().split("\n"))
